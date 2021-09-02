@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Maintenance{% endblock %}</title>
+    {% block stylesheets %}
+        <style>
+            body {
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(173,34,200,1) 35%, rgba(0,212,255,1) 100%);
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                min-height: 100vh;
+                color: #ffffff;
+            }
+
+        </style>
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <div class="content">
+        {% block content %}
+            <h1>The site is undergoing maintenance.</h1>
+        {% endblock %}
+    </div>
+{% endblock %}
+</body>
+</html>

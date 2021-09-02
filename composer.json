@@ -1,0 +1,32 @@
+{
+    "name": "fpalamuso/symfony-maintenance-bundle",
+    "description": "Provide simple symfony maintenance system",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Palamuso",
+            "email": "florianpalamuso@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5 || >= 8.0",
+        "twig/twig": ">=3.0",
+        "symfony/http-foundation": ">=4.4 || >=5.0",
+        "symfony/http-kernel": ">=4.4 || >=5.0",
+        "symfony/framework-bundle": ">=4.4 || >=5.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": ">=4.4 || >=5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FPalamuso\\SymfonyMaintenanceBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FPalamuso\\SymfonyMaintenanceBundle\\Tests\\": "tests/"
+        }
+    }
+}
